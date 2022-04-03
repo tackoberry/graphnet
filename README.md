@@ -1,6 +1,8 @@
 # GNNforPhysics
 Graph Neural Networks for Physics
 
+fork from https://github.com/deepmind/deepmind-research/tree/master/learning_to_simulate
+
 ``` bash
 # Download dataset (e.g. WaterRamps):
 bash ./learning_to_simulate/download_dataset.sh WaterDrop ./tmp/datasets
@@ -42,3 +44,12 @@ docker-compose up
 # Check model log by tensorboard:
 tensorboard --logdir tmp/models
 ```
+
+tensorboard image
+- WaterRamps(1000000step)
+    - Example
+    ![WaterRamps(1000000step) test_2](image/rollout_test_2.gif)
+    - GRAPHS
+    ![WaterRamps(1000000step) GRAPHS](image/WaterRamps_1000000.png)
+    - SCALARS loss
+    ![WaterRamps(1000000step) SCALARS loss](image/WaterRamps_1000000_loss.svg)
